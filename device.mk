@@ -150,6 +150,10 @@ PRODUCT_PACKAGES += \
     cneapiclient \
     com.quicinc.cne
 
+# Disable rescue party
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.disable_rescue=true
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl:64 \
