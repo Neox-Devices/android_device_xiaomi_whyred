@@ -23,10 +23,11 @@ $(call inherit-product-if-exists, vendor/MiuiCamera/config.mk)
 # Inherit from whyred device
 $(call inherit-product, device/xiaomi/whyred/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/syberia/common.mk)
+# Inherit some common NeoxROM stuff.
+TARGET_BOOT_ANIMATION_RES := 1080
+$(call inherit-product, vendor/neox/config/common_full_phone.mk)
 
-PRODUCT_NAME := syberia_whyred
+PRODUCT_NAME := neox_whyred
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := whyred
 PRODUCT_MANUFACTURER := Xiaomi
